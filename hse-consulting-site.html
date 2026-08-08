@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مشاور ایمنی و بهداشت شغلی | HSE Consulting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --charcoal:#22262b;
+    --charcoal-soft:#2c3138;
+    --concrete:#eeece6;
+    --white:#ffffff;
+    --safety-yellow:#f4b400;
+    --hazard-red:#b3271e;
+    --steel:#5c6570;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Vazirmatn',sans-serif;
+    background:var(--concrete);
+    color:var(--charcoal);
+    line-height:1.7;
+    overflow-x:hidden;
+  }
+  .stripe-bar{
+    height:10px;
+    width:100%;
+    background:repeating-linear-gradient(
+      -45deg,
+      var(--safety-yellow),
+      var(--safety-yellow) 18px,
+      var(--charcoal) 18px,
+      var(--charcoal) 36px
+    );
+  }
+  /* HERO */
+  .hero{
+    background:var(--charcoal);
+    color:var(--white);
+    padding:90px 8vw 100px;
+    position:relative;
+  }
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    color:var(--safety-yellow);
+    font-weight:700;
+    font-size:14px;
+    letter-spacing:1px;
+    margin-bottom:24px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:10px;height:10px;
+    background:var(--safety-yellow);
+    display:inline-block;
+    transform:rotate(45deg);
+  }
+  .hero h1{
+    font-size:clamp(32px,5.2vw,58px);
+    font-weight:900;
+    line-height:1.25;
+    max-width:920px;
+    margin-bottom:26px;
+  }
+  .hero h1 span{color:var(--safety-yellow);}
+  .hero p{
+    font-size:18px;
+    color:#c7ccd1;
+    max-width:640px;
+    margin-bottom:38px;
+  }
+  .btn{
+    display:inline-block;
+    background:var(--safety-yellow);
+    color:var(--charcoal);
+    font-weight:800;
+    font-size:16px;
+    padding:16px 34px;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(244,180,0,.35);}
+  .btn-outline{
+    display:inline-block;
+    margin-inline-start:14px;
+    padding:16px 30px;
+    border:2px solid #454b53;
+    color:var(--white);
+    text-decoration:none;
+    font-weight:700;
+    font-size:16px;
+  }
+  .credibility{
+    margin-top:56px;
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+    color:#9aa1a8;
+    font-size:14px;
+  }
+  .credibility b{color:var(--white);font-size:15px;}
+
+  section{padding:90px 8vw;}
+  .section-head{max-width:680px;margin-bottom:56px;}
+  .section-head .eyebrow{color:var(--hazard-red);}
+  .section-head .eyebrow::before{background:var(--hazard-red);}
+  .section-head h2{font-size:clamp(26px,3.4vw,40px);font-weight:800;color:var(--charcoal);}
+
+  /* ABOUT */
+  .about{background:var(--white);}
+  .about-grid{
+    display:grid;
+    grid-template-columns:1fr 1.3fr;
+    gap:60px;
+    align-items:start;
+  }
+  .about-badge{
+    aspect-ratio:1/1;
+    background:var(--charcoal);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+  }
+  .about-badge svg{width:46%;height:46%;}
+  .about-badge::after{
+    content:"";
+    position:absolute; inset:14px;
+    border:2px dashed rgba(244,180,0,.5);
+  }
+  .about-text p{margin-bottom:18px;font-size:16.5px;color:#3a3f45;}
+  .about-text strong{color:var(--charcoal);}
+
+  /* SERVICES */
+  .services{background:var(--concrete);}
+  .service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:2px;
+    background:#d7d4cb;
+  }
+  .service-card{
+    background:var(--concrete);
+    padding:36px 30px;
+    transition:background .2s ease;
+  }
+  .service-card:hover{background:var(--white);}
+  .service-card svg{width:34px;height:34px;stroke:var(--hazard-red);margin-bottom:20px;}
+  .service-card h3{font-size:18px;font-weight:800;margin-bottom:10px;}
+  .service-card p{font-size:14.5px;color:var(--steel);}
+
+  /* PROCESS */
+  .process{background:var(--charcoal);color:var(--white);}
+  .process .section-head h2{color:var(--white);}
+  .process .eyebrow{color:var(--safety-yellow);}
+  .process .eyebrow::before{background:var(--safety-yellow);}
+  .steps{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:0;
+  }
+  .step{
+    padding:0 26px 0 0;
+    border-inline-end:1px solid #3a4048;
+  }
+  .step:last-child{border:none;}
+  .step .num{
+    font-size:44px;
+    font-weight:900;
+    color:transparent;
+    -webkit-text-stroke:1.5px var(--safety-yellow);
+    margin-bottom:18px;
+    display:block;
+  }
+  .step h4{font-size:16.5px;font-weight:800;margin-bottom:10px;}
+  .step p{font-size:14px;color:#a7adb3;}
+
+  /* GAUGE / SIGNATURE STATS */
+  .stats{background:var(--concrete);display:flex;gap:60px;flex-wrap:wrap;align-items:center;justify-content:space-between;}
+  .gauge-wrap{display:flex;align-items:center;gap:22px;}
+  .gauge-label{max-width:230px;}
+  .gauge-label b{display:block;font-size:15px;margin-bottom:6px;}
+  .gauge-label span{font-size:13.5px;color:var(--steel);}
+  svg.gauge{width:120px;height:120px;}
+  .gauge circle{fill:none;stroke-width:10;}
+  .gauge .bg{stroke:#ddd9cd;}
+  .gauge .fg{
+    stroke:var(--hazard-red);
+    stroke-linecap:round;
+    stroke-dasharray:301;
+    stroke-dashoffset:301;
+    transform:rotate(-90deg);
+    transform-origin:50% 50%;
+    transition:stroke-dashoffset 1.4s ease;
+  }
+  .gauge.in-view .fg{stroke-dashoffset:55;}
+
+  .stat-line{display:flex;gap:48px;flex-wrap:wrap;}
+  .stat-item b{display:block;font-size:26px;font-weight:900;color:var(--charcoal);}
+  .stat-item span{font-size:13.5px;color:var(--steel);}
+
+  /* CONTACT */
+  .contact{background:var(--white);}
+  .contact-box{
+    background:var(--charcoal);
+    color:var(--white);
+    padding:60px 8vw;
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:50px;
+    position:relative;
+  }
+  .contact-box::before{
+    content:"";
+    position:absolute; top:0; right:0; left:0; height:6px;
+    background:repeating-linear-gradient(-45deg,var(--safety-yellow),var(--safety-yellow) 14px,var(--charcoal) 14px,var(--charcoal) 28px);
+  }
+  .contact-box h2{font-size:clamp(24px,3vw,34px);font-weight:800;margin-bottom:18px;}
+  .contact-box p{color:#c7ccd1;font-size:15.5px;margin-bottom:10px;}
+  .contact-info{display:flex;flex-direction:column;gap:16px;justify-content:center;}
+  .contact-info a{
+    color:var(--white);
+    text-decoration:none;
+    font-size:16px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 18px;
+    background:var(--charcoal-soft);
+    border-inline-start:3px solid var(--safety-yellow);
+  }
+  .placeholder-note{
+    font-size:12.5px;
+    color:var(--hazard-red);
+    background:#fff3ef;
+    border:1px dashed var(--hazard-red);
+    padding:10px 14px;
+    margin-top:20px;
+  }
+
+  footer{
+    background:var(--charcoal);
+    color:#8b9198;
+    text-align:center;
+    padding:26px;
+    font-size:13px;
+  }
+
+  @media (max-width:820px){
+    .about-grid{grid-template-columns:1fr;}
+    .steps{grid-template-columns:1fr 1fr;row-gap:34px;}
+    .step{border-inline-end:none;}
+    .contact-box{grid-template-columns:1fr;}
+    .stats{flex-direction:column;align-items:flex-start;gap:30px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="stripe-bar"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="eyebrow">مشاوره ایمنی، بهداشت و محیط کار (HSE)</span>
+  <h1>قبل از این‌که <span>حادثه</span> تصمیم بگیرد،<br>شما تصمیم بگیرید.</h1>
+  <p>همراهی با تیم‌های تولید و اجرا برای شناسایی مخاطرات پیش از وقوع، طراحی پروتکل‌های واکنش اضطراری، و ساختن محیط کاری که ایمنی در آن یک اتفاق نیست — یک سیستم است.</p>
+  <a href="#contact" class="btn">درخواست مشاوره اولیه</a>
+  <a href="#services" class="btn-outline">دیدن خدمات</a>
+  <div class="credibility">
+    <div><b>+۶ سال</b> تجربه اجرایی در خطوط تولید و صنعت</div>
+    <div><b>مدیریت مستقیم</b> ایمنی، اورژانس و مسیرهای پرریسک</div>
+    <div><b>تحلیل حادثه</b> و اصلاح فرآیند پس از رخداد</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <div class="about-grid">
+    <div class="about-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#f4b400" stroke-width="1.5"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z"/><path d="M9 12l2 2 4-4"/></svg>
+    </div>
+    <div class="about-text">
+      <div class="eyebrow" style="color:var(--hazard-red)"><span></span>درباره من</div>
+      <p><strong>سال‌هاست در دل خطوط تولید و پروژه‌های صنعتی کار می‌کنم</strong>، نه پشت میز. مسئولیت مستقیم ایمنی پرسنل، طراحی و اجرای پروتکل‌های اورژانس، و مدیریت شرایط پرریسک بخشی از روزمرگی کاری من بوده.</p>
+      <p>تمرکز من روی چیزیه که واقعاً جلوی حادثه رو می‌گیره: شناسایی مخاطرات واقعی محیط کار شما، نه چک‌لیست‌های عمومی. هر پیشنهاد بر اساس تجربه‌ی میدانی و آشنایی با فشار واقعی خطوط تولید ارائه می‌شه.</p>
+      <p>اگر شرکت شما به دنبال کاهش واقعی ریسک، آماده‌سازی برای بازرسی، یا ساخت فرهنگ ایمنی پایدار است، خوشحال می‌شوم همکاری کنیم.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-head">
+    <div class="eyebrow"><span></span>خدمات</div>
+    <h2>کاری که برای شرکت شما انجام می‌دهم</h2>
+  </div>
+  <div class="service-grid">
+    <div class="service-card">
+      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <h3>ارزیابی ریسک و ممیزی ایمنی</h3>
+      <p>بازدید میدانی و شناسایی نقاط پرخطر پیش از این‌که به حادثه تبدیل شوند.</p>
+    </div>
+    <div class="service-card">
+      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z"/></svg>
+      <h3>پروتکل‌های اورژانس و واکنش سریع</h3>
+      <p>آماده‌سازی تیم و مسیرهای اضطراری برای لحظاتی که وقت فکر کردن نیست.</p>
+    </div>
+    <div class="service-card">
+      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+      <h3>آموزش ایمنی پرسنل</h3>
+      <p>کارگاه‌های عملی و متناسب با شرایط واقعی خط تولید شما، نه محتوای عمومی.</p>
+    </div>
+    <div class="service-card">
+      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 20l-5.5-2V4L9 6m0 14 6-2M9 20V6m6 12 5.5 2V6L15 4m0 14V4"/></svg>
+      <h3>طراحی مسیرهای تردد و ایستگاه‌های کار</h3>
+      <p>بازنگری چیدمان فیزیکی برای کاهش ریسک برخورد، تصادف و آسیب جسمی.</p>
+    </div>
+    <div class="service-card">
+      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+      <h3>مستندسازی و انطباق قانونی</h3>
+      <p>آماده‌سازی مستندات ایمنی برای بازرسی‌های اداره کار و استانداردهای صنعتی.</p>
+    </div>
+    <div class="service-card">
+      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg>
+      <h3>تحلیل و اصلاح پس از حادثه</h3>
+      <p>بررسی علت ریشه‌ای رخداد و بازطراحی فرآیند برای جلوگیری از تکرار آن.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="section-head">
+    <div class="eyebrow"><span></span>روند همکاری</div>
+    <h2>از بازدید اول تا ایمنی پایدار</h2>
+  </div>
+  <div class="steps">
+    <div class="step"><span class="num">۰۱</span><h4>ارزیابی اولیه</h4><p>بازدید میدانی، مصاحبه با تیم، و شناسایی مخاطرات واقعی محیط شما.</p></div>
+    <div class="step"><span class="num">۰۲</span><h4>برنامه‌ریزی</h4><p>تدوین نقشه راه اولویت‌بندی‌شده متناسب با بودجه و زمان‌بندی شما.</p></div>
+    <div class="step"><span class="num">۰۳</span><h4>اجرا</h4><p>پیاده‌سازی پروتکل‌ها، آموزش تیم، و اصلاح چیدمان یا فرآیند.</p></div>
+    <div class="step"><span class="num">۰۴</span><h4>پایش مستمر</h4><p>بازبینی دوره‌ای، به‌روزرسانی مستندات، و همراهی بلندمدت.</p></div>
+  </div>
+</section>
+
+<!-- STATS / GAUGE -->
+<section class="stats">
+  <div class="gauge-wrap">
+    <svg class="gauge" viewBox="0 0 110 110">
+      <circle class="bg" cx="55" cy="55" r="48"/>
+      <circle class="fg" cx="55" cy="55" r="48"/>
+    </svg>
+    <div class="gauge-label">
+      <b>هدف هر پروژه: کاهش ریسک محسوس</b>
+      <span>هر همکاری با یک نقطه شروع مشخص و یک هدف قابل اندازه‌گیری تعریف می‌شود.</span>
+    </div>
+  </div>
+  <div class="stat-line">
+    <div class="stat-item"><b>+۶</b><span>سال تجربه اجرایی</span></div>
+    <div class="stat-item"><b>میدانی</b><span>نه فقط مشاوره پشت میزی</span></div>
+    <div class="stat-item"><b>اورژانس</b><span>تجربه مستقیم مدیریت بحران</span></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-box">
+    <div>
+      <h2>آماده‌ی بررسی محیط کار شما هستم</h2>
+      <p>یک جلسه‌ی کوتاه و رایگان برای شناخت اولیه‌ی شرایط شرکت شما و بررسی این‌که همکاری چطور می‌تواند مفید باشد.</p>
+      <div class="placeholder-note">
+        ⚠ این بخش‌ها placeholder هستند — لطفاً نام، شماره تماس و ایمیل واقعی خودت رو جایگزین کن.
+      </div>
+    </div>
+    <div class="contact-info">
+      <a href="mailto:your-email@example.com">📧 your-email@example.com</a>
+      <a href="tel:+989000000000">📞 ۰۹۰۰-۰۰۰-۰۰۰۰</a>
+      <a href="#">💼 نام و نام خانوادگی — مشاور ایمنی و بهداشت شغلی</a>
+    </div>
+  </div>
+</section>
+
+<footer>© تمامی حقوق محفوظ است — مشاوره ایمنی و بهداشت شغلی (HSE)</footer>
+
+<script>
+  const gauge = document.querySelector('.gauge');
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting) gauge.classList.add('in-view'); });
+  },{threshold:0.4});
+  obs.observe(gauge);
+</script>
+
+</body>
+</html>
