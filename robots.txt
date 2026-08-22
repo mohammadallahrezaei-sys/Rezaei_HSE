@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mohammadallahrezaei-sys.github.io/Rezaei_HSE/sitemap.xml
