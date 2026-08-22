@@ -2,18 +2,16 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>محمد الله رضایی | مشاور HSE، ارگونومی و سیستم‌های مدیریتی</title>
+<title>محمد الله رضایی | مشاور HSE و ارگونومی</title>
 
-<meta name="description" content="محمد الله رضایی، مشاور HSE و ارگونومی با ۱۵ سال تجربه در صنایع و محیط‌های تولیدی. ارائه خدمات مشاوره HSE، ارزیابی ریسک، ارگونومی، آموزش، مستندسازی و طراحی داشبوردهای مدیریتی.">
-<meta name="keywords" content="مشاوره HSE, مشاور HSE, ارگونومی, ارزیابی ریسک, ایمنی صنعتی, بهداشت حرفه ای, Power BI, داشبورد HSE, Excel HSE, Access HSE">
+<meta name="description"
+content="محمد الله رضایی، مشاور HSE و ارگونومی با ۱۵ سال تجربه در صنایع و محیط‌های تولیدی. ارائه خدمات مشاوره HSE، ارزیابی ریسک، ارگونومی، آموزش، مستندسازی و داشبوردهای مدیریتی.">
+
 <meta name="author" content="محمد الله رضایی">
-
-<meta property="og:title" content="محمد الله رضایی | مشاور HSE و ارگونومی">
-<meta property="og:description" content="۱۵ سال تجربه در HSE، ارگونومی و سیستم‌سازی اطلاعات ایمنی برای صنایع و کارخانه‌ها.">
-<meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -21,655 +19,759 @@
 <style>
 
 :root{
-  --charcoal:#20252b;
-  --charcoal-soft:#2c3239;
-  --concrete:#eeece6;
-  --white:#ffffff;
-  --yellow:#f4b400;
-  --red:#b3271e;
-  --steel:#65707a;
-  --light:#f7f6f2;
+--dark:#20252b;
+--dark2:#2b3138;
+--yellow:#f4b400;
+--red:#b3271e;
+--white:#fff;
+--gray:#68727c;
+--light:#f1efe9;
 }
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-  scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-  font-family:'Vazirmatn',sans-serif;
-  background:var(--concrete);
-  color:var(--charcoal);
-  line-height:1.8;
-  overflow-x:hidden;
+font-family:'Vazirmatn',sans-serif;
+background:var(--light);
+color:var(--dark);
+line-height:1.8;
+overflow-x:hidden;
+}
+
+img{
+max-width:100%;
+display:block;
 }
 
 a{
-  color:inherit;
+text-decoration:none;
+color:inherit;
 }
 
 .stripe{
-  height:9px;
-  background:repeating-linear-gradient(
-    -45deg,
-    var(--yellow),
-    var(--yellow) 18px,
-    var(--charcoal) 18px,
-    var(--charcoal) 36px
-  );
+height:9px;
+background:repeating-linear-gradient(
+-45deg,
+var(--yellow),
+var(--yellow) 18px,
+var(--dark) 18px,
+var(--dark) 36px
+);
 }
 
-/* NAVIGATION */
+/* NAV */
 
 nav{
-  position:absolute;
-  top:9px;
-  left:0;
-  right:0;
-  z-index:10;
-  padding:24px 7vw;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  color:white;
+position:absolute;
+top:9px;
+left:0;
+right:0;
+z-index:20;
+padding:24px 7vw;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
 }
 
 .logo{
-  font-size:20px;
-  font-weight:900;
+font-weight:900;
+font-size:20px;
 }
 
 .logo span{
-  color:var(--yellow);
+color:var(--yellow);
 }
 
 .nav-links{
-  display:flex;
-  gap:28px;
-  font-size:14px;
+display:flex;
+gap:28px;
+font-size:14px;
 }
 
 .nav-links a{
-  text-decoration:none;
-  color:#d7d9dc;
+color:#ddd;
+transition:.2s;
 }
 
 .nav-links a:hover{
-  color:var(--yellow);
+color:var(--yellow);
 }
 
 /* HERO */
 
 .hero{
-  min-height:760px;
-  background:
-    radial-gradient(circle at 15% 40%,rgba(244,180,0,.09),transparent 28%),
-    var(--charcoal);
-  color:white;
-  padding:180px 8vw 100px;
-  position:relative;
-  display:flex;
-  align-items:center;
+min-height:780px;
+position:relative;
+display:flex;
+align-items:center;
+padding:170px 8vw 100px;
+color:white;
+overflow:hidden;
+
+background:
+linear-gradient(
+90deg,
+rgba(20,24,28,.96) 15%,
+rgba(20,24,28,.78) 55%,
+rgba(20,24,28,.45)
+),
+url("https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1800&q=85");
+
+background-size:cover;
+background-position:center;
 }
 
 .hero-content{
-  max-width:980px;
+max-width:950px;
+position:relative;
+z-index:2;
 }
 
 .eyebrow{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  color:var(--yellow);
-  font-weight:800;
-  font-size:14px;
-  margin-bottom:24px;
+display:flex;
+align-items:center;
+gap:10px;
+font-size:14px;
+font-weight:800;
+color:var(--yellow);
+margin-bottom:22px;
 }
 
 .eyebrow:before{
-  content:"";
-  width:9px;
-  height:9px;
-  background:var(--yellow);
-  transform:rotate(45deg);
+content:"";
+width:9px;
+height:9px;
+background:var(--yellow);
+transform:rotate(45deg);
 }
 
 .hero h1{
-  font-size:clamp(35px,5vw,62px);
-  font-weight:900;
-  line-height:1.3;
-  margin-bottom:25px;
-  max-width:950px;
+font-size:clamp(36px,5vw,63px);
+line-height:1.3;
+font-weight:900;
+margin-bottom:25px;
 }
 
 .hero h1 span{
-  color:var(--yellow);
+color:var(--yellow);
 }
 
 .hero-description{
-  max-width:720px;
-  color:#c7ccd1;
-  font-size:18px;
-  margin-bottom:38px;
+font-size:18px;
+color:#d0d4d8;
+max-width:730px;
+margin-bottom:38px;
 }
 
 .buttons{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
+display:flex;
+gap:12px;
+flex-wrap:wrap;
 }
 
 .btn{
-  display:inline-block;
-  padding:15px 30px;
-  background:var(--yellow);
-  color:var(--charcoal);
-  text-decoration:none;
-  font-weight:900;
-  transition:.2s;
+background:var(--yellow);
+padding:15px 30px;
+font-weight:900;
+color:var(--dark);
+transition:.2s;
 }
 
 .btn:hover{
-  transform:translateY(-2px);
-  box-shadow:0 8px 25px rgba(244,180,0,.25);
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(244,180,0,.25);
 }
 
 .btn-outline{
-  display:inline-block;
-  padding:14px 29px;
-  border:2px solid #50565d;
-  text-decoration:none;
-  font-weight:700;
+border:2px solid #626971;
+padding:13px 29px;
+font-weight:800;
+color:white;
 }
 
 .btn-outline:hover{
-  border-color:var(--yellow);
-  color:var(--yellow);
+border-color:var(--yellow);
+color:var(--yellow);
 }
 
 .hero-stats{
-  display:flex;
-  flex-wrap:wrap;
-  gap:45px;
-  margin-top:60px;
-  color:#9da4ab;
-  font-size:14px;
+display:flex;
+gap:45px;
+flex-wrap:wrap;
+margin-top:55px;
+color:#aeb4ba;
+font-size:13px;
 }
 
 .hero-stats strong{
-  display:block;
-  color:white;
-  font-size:22px;
-  font-weight:900;
+display:block;
+font-size:23px;
+color:white;
+font-weight:900;
 }
 
-/* GENERAL */
+/* SECTIONS */
 
 section{
-  padding:90px 8vw;
+padding:95px 8vw;
 }
 
 .section-title{
-  max-width:760px;
-  margin-bottom:50px;
+max-width:780px;
+margin-bottom:50px;
 }
 
 .section-title .eyebrow{
-  color:var(--red);
+color:var(--red);
 }
 
 .section-title .eyebrow:before{
-  background:var(--red);
+background:var(--red);
 }
 
 .section-title h2{
-  font-size:clamp(28px,3.5vw,43px);
-  line-height:1.4;
-  font-weight:900;
+font-size:clamp(28px,3.5vw,43px);
+line-height:1.4;
+font-weight:900;
 }
 
 /* ABOUT */
 
 .about{
-  background:white;
+background:white;
 }
 
 .about-grid{
-  display:grid;
-  grid-template-columns:.8fr 1.5fr;
-  gap:70px;
-  align-items:center;
+display:grid;
+grid-template-columns:.8fr 1.3fr;
+gap:70px;
+align-items:center;
 }
 
-.about-card{
-  background:var(--charcoal);
-  color:white;
-  padding:45px;
-  position:relative;
+.profile-box{
+background:var(--dark);
+padding:14px;
+position:relative;
 }
 
-.about-card:before{
-  content:"";
-  position:absolute;
-  top:0;
-  right:0;
-  width:100%;
-  height:7px;
-  background:var(--yellow);
+.profile-box img{
+width:100%;
+aspect-ratio:4/5;
+object-fit:cover;
 }
 
-.about-card .initial{
-  font-size:70px;
-  font-weight:900;
-  color:var(--yellow);
-  line-height:1;
-  margin-bottom:20px;
+.profile-caption{
+padding:20px 10px 10px;
+color:white;
 }
 
-.about-card h3{
-  font-size:22px;
-  margin-bottom:8px;
+.profile-caption strong{
+display:block;
+font-size:21px;
+color:var(--yellow);
 }
 
-.about-card p{
-  color:#aeb4ba;
-  font-size:14px;
+.profile-caption span{
+font-size:13px;
+color:#b9bec3;
+}
+
+.profile-note{
+font-size:11px;
+color:#777;
+margin-top:8px;
 }
 
 .about-text p{
-  margin-bottom:18px;
-  color:#41474d;
-  font-size:16px;
+font-size:16px;
+color:#444b51;
+margin-bottom:18px;
 }
 
 .about-text strong{
-  color:var(--charcoal);
+color:var(--dark);
 }
 
 /* SERVICES */
 
 .services{
-  background:var(--concrete);
+background:var(--light);
 }
 
 .service-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:2px;
-  background:#d6d3ca;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:3px;
 }
 
 .service-card{
-  background:var(--concrete);
-  padding:35px 30px;
-  min-height:220px;
-  transition:.2s;
+background:white;
+overflow:hidden;
+transition:.25s;
 }
 
 .service-card:hover{
-  background:white;
+transform:translateY(-5px);
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.service-image{
+height:190px;
+overflow:hidden;
+}
+
+.service-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.4s;
+}
+
+.service-card:hover .service-image img{
+transform:scale(1.06);
+}
+
+.service-content{
+padding:27px;
 }
 
 .service-number{
-  font-size:13px;
-  color:var(--red);
-  font-weight:900;
-  margin-bottom:18px;
+font-size:12px;
+color:var(--red);
+font-weight:900;
+margin-bottom:8px;
 }
 
-.service-card h3{
-  font-size:18px;
-  font-weight:900;
-  margin-bottom:12px;
+.service-content h3{
+font-size:18px;
+font-weight:900;
+margin-bottom:10px;
 }
 
-.service-card p{
-  color:var(--steel);
-  font-size:14px;
+.service-content p{
+font-size:14px;
+color:var(--gray);
 }
 
-/* SPECIAL SERVICES */
+/* DIGITAL */
 
 .digital{
-  background:white;
+background:var(--dark);
+color:white;
+}
+
+.digital .section-title h2{
+color:white;
+}
+
+.digital .eyebrow{
+color:var(--yellow);
+}
+
+.digital .eyebrow:before{
+background:var(--yellow);
 }
 
 .digital-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:3px;
-  background:#ddd;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:3px;
 }
 
 .digital-card{
-  background:var(--charcoal);
-  color:white;
-  padding:40px;
+min-height:390px;
+position:relative;
+overflow:hidden;
+display:flex;
+align-items:flex-end;
 }
 
-.digital-card:nth-child(2){
-  background:#292e34;
+.digital-card:after{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(
+transparent 20%,
+rgba(20,24,28,.95) 90%
+);
 }
 
-.digital-card h3{
-  color:var(--yellow);
-  font-size:21px;
-  margin-bottom:15px;
+.digital-card img{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.5s;
 }
 
-.digital-card p{
-  color:#c2c7cc;
-  font-size:15px;
-  margin-bottom:15px;
+.digital-card:hover img{
+transform:scale(1.05);
 }
 
-.digital-card ul{
-  padding-right:20px;
-  color:#d8dadd;
-  font-size:14px;
+.digital-content{
+position:relative;
+z-index:2;
+padding:35px;
 }
 
-.digital-card li{
-  margin-bottom:7px;
+.digital-content h3{
+color:var(--yellow);
+font-size:22px;
+margin-bottom:10px;
+}
+
+.digital-content p{
+color:#d0d4d8;
+font-size:14px;
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+background:white;
+}
+
+.portfolio-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.portfolio-card{
+position:relative;
+height:270px;
+overflow:hidden;
+background:var(--dark);
+}
+
+.portfolio-card img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.5s;
+}
+
+.portfolio-card:hover img{
+transform:scale(1.07);
+}
+
+.portfolio-overlay{
+position:absolute;
+inset:0;
+display:flex;
+align-items:flex-end;
+padding:25px;
+background:linear-gradient(
+transparent 35%,
+rgba(20,24,28,.9)
+);
+color:white;
+}
+
+.portfolio-overlay h3{
+font-size:18px;
+}
+
+.portfolio-overlay p{
+font-size:12px;
+color:#c7ccd1;
 }
 
 /* EXPERIENCE */
 
 .experience{
-  background:var(--charcoal);
-  color:white;
+background:var(--dark);
+color:white;
 }
 
 .experience .section-title h2{
-  color:white;
+color:white;
 }
 
 .experience .eyebrow{
-  color:var(--yellow);
+color:var(--yellow);
 }
 
 .experience .eyebrow:before{
-  background:var(--yellow);
+background:var(--yellow);
 }
 
 .timeline{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:2px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:3px;
 }
 
 .timeline-card{
-  padding:35px;
-  border-top:1px solid #444b53;
-  border-bottom:1px solid #444b53;
+padding:40px;
+border-top:1px solid #464c53;
+border-bottom:1px solid #464c53;
 }
 
 .timeline-card strong{
-  color:var(--yellow);
-  font-size:30px;
-  display:block;
-  margin-bottom:10px;
+display:block;
+font-size:35px;
+color:var(--yellow);
 }
 
 .timeline-card h3{
-  font-size:18px;
-  margin-bottom:10px;
+font-size:18px;
+margin:8px 0;
 }
 
 .timeline-card p{
-  color:#aeb4ba;
-  font-size:14px;
+font-size:14px;
+color:#aeb4ba;
 }
 
 /* PROCESS */
 
 .process{
-  background:var(--light);
+background:var(--light);
 }
 
 .steps{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:0;
+display:grid;
+grid-template-columns:repeat(4,1fr);
 }
 
 .step{
-  padding:0 25px;
-  border-left:1px solid #d3d1ca;
+padding:0 25px;
+border-left:1px solid #d2d0c9;
 }
 
 .step:last-child{
-  border-left:none;
+border-left:none;
 }
 
 .step-number{
-  font-size:45px;
-  font-weight:900;
-  color:transparent;
-  -webkit-text-stroke:1.5px var(--red);
-  margin-bottom:15px;
+font-size:45px;
+font-weight:900;
+color:transparent;
+-webkit-text-stroke:1.5px var(--red);
+margin-bottom:12px;
 }
 
 .step h3{
-  font-size:17px;
-  margin-bottom:10px;
+font-size:17px;
+margin-bottom:8px;
 }
 
 .step p{
-  color:var(--steel);
-  font-size:14px;
+font-size:14px;
+color:var(--gray);
 }
 
 /* WHY */
 
 .why{
-  background:white;
+background:white;
 }
 
 .why-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:20px;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
 }
 
 .why-item{
-  padding:28px;
-  background:var(--light);
-  border-right:4px solid var(--yellow);
+background:var(--light);
+padding:28px;
+border-right:4px solid var(--yellow);
 }
 
 .why-item h3{
-  font-size:17px;
-  margin-bottom:7px;
+font-size:17px;
+margin-bottom:7px;
 }
 
 .why-item p{
-  color:var(--steel);
-  font-size:14px;
+font-size:14px;
+color:var(--gray);
 }
 
 /* CONTACT */
 
 .contact{
-  background:var(--white);
+background:white;
 }
 
 .contact-box{
-  background:var(--charcoal);
-  color:white;
-  padding:65px;
-  display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:50px;
-  position:relative;
+background:var(--dark);
+color:white;
+padding:65px;
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:50px;
+position:relative;
 }
 
 .contact-box:before{
-  content:"";
-  position:absolute;
-  top:0;
-  right:0;
-  left:0;
-  height:7px;
-  background:repeating-linear-gradient(
-    -45deg,
-    var(--yellow),
-    var(--yellow) 14px,
-    var(--charcoal) 14px,
-    var(--charcoal) 28px
-  );
+content:"";
+position:absolute;
+top:0;
+right:0;
+left:0;
+height:7px;
+background:repeating-linear-gradient(
+-45deg,
+var(--yellow),
+var(--yellow) 14px,
+var(--dark) 14px,
+var(--dark) 28px
+);
 }
 
 .contact-box h2{
-  font-size:34px;
-  margin-bottom:15px;
+font-size:34px;
+margin-bottom:15px;
 }
 
 .contact-box p{
-  color:#c5cacf;
-  font-size:15px;
+color:#c4c9ce;
+font-size:15px;
 }
 
 .contact-info{
-  display:flex;
-  flex-direction:column;
-  gap:13px;
-  justify-content:center;
+display:flex;
+flex-direction:column;
+gap:13px;
+justify-content:center;
 }
 
 .contact-info a{
-  background:var(--charcoal-soft);
-  border-right:3px solid var(--yellow);
-  padding:15px 18px;
-  text-decoration:none;
-  font-weight:700;
-  direction:rtl;
+background:var(--dark2);
+border-right:3px solid var(--yellow);
+padding:15px 18px;
+font-weight:800;
 }
 
 .contact-info a:hover{
-  background:#363c43;
+background:#383e45;
 }
 
 .whatsapp{
-  background:#176b3a !important;
-  border-right-color:#42d47a !important;
+background:#176b3a!important;
+border-right-color:#42d47a!important;
 }
 
 /* FOOTER */
 
 footer{
-  background:#181c20;
-  color:#8d949b;
-  text-align:center;
-  padding:30px;
-  font-size:13px;
+background:#181c20;
+color:#8d949b;
+text-align:center;
+padding:30px;
+font-size:13px;
 }
 
 footer strong{
-  color:white;
+color:white;
 }
 
 /* MOBILE */
 
 @media(max-width:900px){
 
-  .nav-links{
-    display:none;
-  }
+.nav-links{
+display:none;
+}
 
-  .hero{
-    min-height:auto;
-    padding-top:140px;
-  }
+.service-grid,
+.timeline,
+.portfolio-grid{
+grid-template-columns:1fr 1fr;
+}
 
-  .service-grid,
-  .timeline{
-    grid-template-columns:1fr 1fr;
-  }
+.about-grid,
+.digital-grid,
+.contact-box{
+grid-template-columns:1fr;
+}
 
-  .about-grid,
-  .digital-grid,
-  .contact-box{
-    grid-template-columns:1fr;
-  }
+.steps{
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
 
-  .steps{
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-  }
+.step{
+border-left:none;
+}
 
-  .step{
-    border-left:none;
-  }
 }
 
 @media(max-width:600px){
 
-  section{
-    padding:65px 6vw;
-  }
+section{
+padding:65px 6vw;
+}
 
-  .hero{
-    padding-left:6vw;
-    padding-right:6vw;
-  }
+.hero{
+padding:145px 6vw 80px;
+}
 
-  .hero h1{
-    font-size:34px;
-  }
+.hero h1{
+font-size:35px;
+}
 
-  .hero-description{
-    font-size:16px;
-  }
+.hero-description{
+font-size:16px;
+}
 
-  .hero-stats{
-    gap:25px;
-  }
+.hero-stats{
+gap:25px;
+}
 
-  .service-grid,
-  .timeline,
-  .why-grid,
-  .steps{
-    grid-template-columns:1fr;
-  }
+.service-grid,
+.timeline,
+.portfolio-grid,
+.steps{
+grid-template-columns:1fr;
+}
 
-  .contact-box{
-    padding:45px 28px;
-  }
+.contact-box{
+padding:45px 28px;
+}
 
-  .contact-box h2{
-    font-size:27px;
-  }
+.contact-box h2{
+font-size:27px;
+}
 
 }
 
 </style>
+
 </head>
 
 <body>
 
 <div class="stripe"></div>
 
-<!-- NAVIGATION -->
+<!-- NAV -->
 
 <nav>
 
-  <div class="logo">
-    <span>HSE</span> | محمد الله رضایی
-  </div>
+<div class="logo">
+<span>HSE</span> | محمد الله رضایی
+</div>
 
-  <div class="nav-links">
-    <a href="#about">درباره من</a>
-    <a href="#services">خدمات</a>
-    <a href="#digital">سیستم‌ها و داشبوردها</a>
-    <a href="#experience">تجربه</a>
-    <a href="#contact">تماس</a>
-  </div>
+<div class="nav-links">
+<a href="#about">درباره من</a>
+<a href="#services">خدمات</a>
+<a href="#digital">داشبورد و سیستم‌ها</a>
+<a href="#portfolio">نمونه‌کارها</a>
+<a href="#contact">تماس</a>
+</div>
 
 </nav>
 
@@ -678,63 +780,66 @@ footer strong{
 
 <section class="hero">
 
-  <div class="hero-content">
+<div class="hero-content">
 
-    <div class="eyebrow">
-      مشاوره HSE، ارگونومی و سیستم‌سازی ایمنی
-    </div>
+<div class="eyebrow">
+مشاوره HSE، ارگونومی و سیستم‌سازی
+</div>
 
-    <h1>
-      ایمنی را از یک
-      <span>وظیفه اداری</span>
-      به یک سیستم واقعی تبدیل کنیم.
-    </h1>
+<h1>
+ایمنی را از یک
+<span>وظیفه اداری</span>
+به یک سیستم واقعی تبدیل کنیم.
+</h1>
 
-    <p class="hero-description">
-      من محمد الله رضایی هستم؛ متخصص بهداشت حرفه‌ای و ارگونومی با
-      <strong>۱۵ سال تجربه</strong>
-      در حوزه HSE، محیط‌های صنعتی و تولیدی.
-      تمرکز من بر شناسایی و کنترل ریسک‌های واقعی، بهبود سیستم HSE
-      و تبدیل اطلاعات پراکنده ایمنی به ابزارهای قابل استفاده برای مدیریت است.
-    </p>
+<p class="hero-description">
 
-    <div class="buttons">
+من <strong>محمد الله رضایی</strong> هستم؛ متخصص بهداشت حرفه‌ای
+و ارگونومی با <strong>۱۵ سال تجربه</strong> در حوزه HSE،
+محیط‌های صنعتی و تولیدی.
 
-      <a href="#contact" class="btn">
-        درخواست مشاوره
-      </a>
+تمرکز من بر شناسایی ریسک‌های واقعی، بهبود سیستم HSE،
+ارگونومی محیط کار و تبدیل داده‌های ایمنی به ابزار تصمیم‌گیری مدیریت است.
 
-      <a href="#services" class="btn-outline">
-        مشاهده خدمات
-      </a>
+</p>
 
-    </div>
+<div class="buttons">
 
-    <div class="hero-stats">
+<a href="#contact" class="btn">
+درخواست مشاوره
+</a>
 
-      <div>
-        <strong>۱۵ سال</strong>
-        تجربه حرفه‌ای
-      </div>
+<a href="#services" class="btn-outline">
+مشاهده خدمات
+</a>
 
-      <div>
-        <strong>HSE</strong>
-        ایمنی و بهداشت حرفه‌ای
-      </div>
+</div>
 
-      <div>
-        <strong>ارگونومی</strong>
-        طراحی و ارزیابی محیط کار
-      </div>
+<div class="hero-stats">
 
-      <div>
-        <strong>Power BI</strong>
-        تحلیل و داشبورد مدیریتی
-      </div>
+<div>
+<strong>۱۵ سال</strong>
+تجربه حرفه‌ای
+</div>
 
-    </div>
+<div>
+<strong>HSE</strong>
+ایمنی و بهداشت حرفه‌ای
+</div>
 
-  </div>
+<div>
+<strong>ارگونومی</strong>
+تحلیل محیط کار
+</div>
+
+<div>
+<strong>Power BI</strong>
+داشبورد مدیریتی
+</div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -743,74 +848,75 @@ footer strong{
 
 <section class="about" id="about">
 
-  <div class="about-grid">
+<div class="about-grid">
 
-    <div class="about-card">
+<div class="profile-box">
 
-      <div class="initial">
-        MR
-      </div>
+<img
+src="images/profile.jpg"
+alt="محمد الله رضایی - مشاور HSE و ارگونومی"
+onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80';">
 
-      <h3>
-        محمد الله رضایی
-      </h3>
+<div class="profile-caption">
 
-      <p>
-        مشاور HSE، ارگونومی و سیستم‌های مدیریتی
-      </p>
+<strong>محمد الله رضایی</strong>
 
-      <br>
+<span>
+مشاور HSE، بهداشت حرفه‌ای و ارگونومی
+</span>
 
-      <p>
-        کارشناسی بهداشت حرفه‌ای<br>
-        کارشناسی ارشد ارگونومی
-      </p>
+<div class="profile-note">
+عکس واقعی شما را می‌توان در این قسمت جایگزین کرد.
+</div>
 
-    </div>
+</div>
+
+</div>
 
 
-    <div class="about-text">
+<div class="about-text">
 
-      <div class="section-title">
+<div class="section-title">
 
-        <div class="eyebrow">
-          درباره من
-        </div>
+<div class="eyebrow">
+درباره من
+</div>
 
-        <h2>
-          تجربه میدانی در کنار نگاه سیستمی
-        </h2>
+<h2>
+تجربه میدانی در کنار نگاه سیستمی
+</h2>
 
-      </div>
+</div>
 
-      <p>
-        طی حدود <strong>۱۵ سال فعالیت حرفه‌ای</strong> در حوزه ایمنی،
-        بهداشت حرفه‌ای و HSE، در محیط‌های صنعتی و تولیدی با مسائل واقعی
-        ایمنی و سلامت نیروی کار درگیر بوده‌ام.
-      </p>
+<p>
+طی حدود <strong>۱۵ سال فعالیت حرفه‌ای</strong> در حوزه
+بهداشت حرفه‌ای، ارگونومی، ایمنی و HSE،
+با مسائل واقعی محیط‌های صنعتی و تولیدی درگیر بوده‌ام.
+</p>
 
-      <p>
-        سابقه فعالیت در جایگاه‌های اجرایی و مدیریتی HSE به من کمک کرده
-        است مسائل ایمنی را فقط از زاویه چک‌لیست و مستندات نبینم؛
-        بلکه ارتباط بین نیروی انسانی، تجهیزات، فرآیند تولید و مدیریت
-        را در نظر بگیرم.
-      </p>
+<p>
+تجربه فعالیت اجرایی و مدیریتی HSE باعث شده است
+مسائل ایمنی را فقط از زاویه فرم و چک‌لیست نبینم؛
+بلکه ارتباط بین نیروی انسانی، تجهیزات، فرآیند تولید
+و مدیریت را در نظر بگیرم.
+</p>
 
-      <p>
-        در کنار فعالیت‌های HSE، تخصص من در <strong>ارگونومی</strong>
-        امکان تحلیل ایستگاه‌های کاری، پوسچرهای نامناسب، فعالیت‌های
-        دستی و عوامل انسانی مؤثر بر عملکرد و آسیب‌های شغلی را فراهم می‌کند.
-      </p>
+<p>
+در کنار HSE، تخصص من در <strong>ارگونومی</strong> امکان
+ارزیابی ایستگاه‌های کاری، پوسچرهای نامناسب،
+فعالیت‌های دستی و عوامل انسانی مؤثر بر سلامت و عملکرد
+کارکنان را فراهم می‌کند.
+</p>
 
-      <p>
-        بخش دیگری از فعالیت حرفه‌ای من به <strong>سیستم‌سازی و تحلیل داده‌های HSE</strong>
-        اختصاص دارد؛ از طراحی فرم و بانک اطلاعاتی تا ساخت داشبوردهای
-        مدیریتی با Excel و Power BI.
-      </p>
+<p>
+همچنین در زمینه <strong>Excel، Access، Power Query
+و Power BI</strong> برای طراحی ابزارهای اطلاعاتی و
+داشبوردهای مدیریتی HSE فعالیت می‌کنم.
+</p>
 
-    </div>
+</div>
 
-  </div>
+</div>
 
 </section>
 
@@ -819,178 +925,360 @@ footer strong{
 
 <section class="services" id="services">
 
-  <div class="section-title">
+<div class="section-title">
 
-    <div class="eyebrow">
-      خدمات مشاوره
-    </div>
+<div class="eyebrow">
+خدمات
+</div>
 
-    <h2>
-      خدماتی که می‌توانم برای سازمان و کارخانه شما ارائه کنم
-    </h2>
+<h2>
+خدماتی که می‌توانم برای سازمان و کارخانه شما ارائه کنم
+</h2>
 
-  </div>
-
-
-  <div class="service-grid">
-
-    <div class="service-card">
-      <div class="service-number">01</div>
-      <h3>ارزیابی ریسک و شناسایی مخاطرات</h3>
-      <p>
-        شناسایی خطرات، ارزیابی ریسک و اولویت‌بندی اقدامات کنترلی
-        بر اساس شرایط واقعی محیط کار.
-      </p>
-    </div>
+</div>
 
 
-    <div class="service-card">
-      <div class="service-number">02</div>
-      <h3>ممیزی و بازرسی HSE</h3>
-      <p>
-        بررسی وضعیت ایمنی، بهداشت حرفه‌ای و محیط کار و ارائه
-        گزارش مدیریتی از نقاط قوت، عدم انطباق‌ها و اقدامات اصلاحی.
-      </p>
-    </div>
+<div class="service-grid">
 
 
-    <div class="service-card">
-      <div class="service-number">03</div>
-      <h3>مستندسازی و سیستم HSE</h3>
-      <p>
-        طراحی و بهبود دستورالعمل‌ها، فرم‌ها، چک‌لیست‌ها، فرآیندها
-        و مستندات مورد نیاز سیستم HSE.
-      </p>
-    </div>
+<div class="service-card">
+
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=85"
+alt="محیط صنعتی و ایمنی">
+
+</div>
+
+<div class="service-content">
+
+<div class="service-number">01</div>
+
+<h3>
+ارزیابی ریسک و شناسایی مخاطرات
+</h3>
+
+<p>
+شناسایی خطرات، ارزیابی ریسک و اولویت‌بندی اقدامات کنترلی
+بر اساس شرایط واقعی محیط کار.
+</p>
+
+</div>
+
+</div>
 
 
-    <div class="service-card">
-      <div class="service-number">04</div>
-      <h3>تحلیل حوادث و اقدامات اصلاحی</h3>
-      <p>
-        بررسی حوادث و شبه‌حوادث، شناسایی علل و تعریف اقدامات اصلاحی
-        برای جلوگیری از تکرار رخداد.
-      </p>
-    </div>
+<div class="service-card">
+
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=85"
+alt="بازرسی و ایمنی صنعتی">
+
+</div>
+
+<div class="service-content">
+
+<div class="service-number">02</div>
+
+<h3>
+ممیزی و بازرسی HSE
+</h3>
+
+<p>
+بررسی وضعیت ایمنی، بهداشت حرفه‌ای و ارائه گزارش
+از نقاط قوت، عدم انطباق‌ها و اقدامات اصلاحی.
+</p>
+
+</div>
+
+</div>
 
 
-    <div class="service-card">
-      <div class="service-number">05</div>
-      <h3>آموزش HSE</h3>
-      <p>
-        طراحی و اجرای آموزش‌های کاربردی متناسب با نوع فعالیت،
-        ریسک‌ها و نیازهای واقعی کارکنان.
-      </p>
-    </div>
+<div class="service-card">
+
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1581091870622-3e7e3c9c3d1e?auto=format&fit=crop&w=900&q=85"
+alt="آموزش ایمنی">
+
+</div>
+
+<div class="service-content">
+
+<div class="service-number">03</div>
+
+<h3>
+آموزش HSE
+</h3>
+
+<p>
+طراحی آموزش‌های کاربردی متناسب با نوع فعالیت،
+ریسک‌ها و شرایط واقعی کارکنان.
+</p>
+
+</div>
+
+</div>
 
 
-    <div class="service-card">
-      <div class="service-number">06</div>
-      <h3>آمادگی شرایط اضطراری</h3>
-      <p>
-        طراحی فرآیندها و برنامه‌های واکنش در شرایط اضطراری،
-        نقش‌ها، مسئولیت‌ها و سناریوهای واکنش.
-      </p>
-    </div>
+<div class="service-card">
+
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85"
+alt="مدیریت و مستندسازی">
+
+</div>
+
+<div class="service-content">
+
+<div class="service-number">04</div>
+
+<h3>
+مستندسازی و سیستم HSE
+</h3>
+
+<p>
+طراحی دستورالعمل‌ها، فرم‌ها، چک‌لیست‌ها،
+فرآیندها و مستندات HSE.
+</p>
+
+</div>
+
+</div>
 
 
-    <div class="service-card">
-      <div class="service-number">07</div>
-      <h3>ارگونومی محیط کار</h3>
-      <p>
-        ارزیابی پوسچر، فعالیت‌های دستی، ایستگاه‌های کاری و عوامل
-        ارگونومیک و ارائه راهکارهای اصلاحی.
-      </p>
-    </div>
+<div class="service-card">
+
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=85"
+alt="تحلیل و جلسه مدیریتی">
+
+</div>
+
+<div class="service-content">
+
+<div class="service-number">05</div>
+
+<h3>
+تحلیل حوادث و اقدامات اصلاحی
+</h3>
+
+<p>
+بررسی حادثه و شبه‌حادثه، شناسایی علل و تعریف
+اقدامات اصلاحی برای جلوگیری از تکرار.
+</p>
+
+</div>
+
+</div>
 
 
-    <div class="service-card">
-      <div class="service-number">08</div>
-      <h3>بهداشت حرفه‌ای</h3>
-      <p>
-        شناسایی عوامل زیان‌آور محیط کار، بررسی مواجهه‌ها و کمک به
-        طراحی اقدامات کنترلی و برنامه‌های بهداشت حرفه‌ای.
-      </p>
-    </div>
+<div class="service-card">
+
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=85"
+alt="بهداشت حرفه‌ای">
+
+</div>
+
+<div class="service-content">
+
+<div class="service-number">06</div>
+
+<h3>
+بهداشت حرفه‌ای
+</h3>
+
+<p>
+شناسایی عوامل زیان‌آور محیط کار و ارائه راهکارهای
+کنترلی و بهبود شرایط کار.
+</p>
+
+</div>
+
+</div>
 
 
-    <div class="service-card">
-      <div class="service-number">09</div>
-      <h3>مشاوره راه‌اندازی یا بهبود واحد HSE</h3>
-      <p>
-        بررسی وضعیت موجود و طراحی نقشه راه برای ایجاد یا ارتقای
-        سیستم HSE متناسب با اندازه و نیاز سازمان.
-      </p>
-    </div>
-
-  </div>
+</div>
 
 </section>
 
 
-<!-- DIGITAL SERVICES -->
+<!-- DIGITAL -->
 
 <section class="digital" id="digital">
 
-  <div class="section-title">
+<div class="section-title">
 
-    <div class="eyebrow">
-      HSE + Data
-    </div>
+<div class="eyebrow">
+HSE + DATA
+</div>
 
-    <h2>
-      فقط گزارش تولید نمی‌کنیم؛ داده HSE را به ابزار تصمیم‌گیری تبدیل می‌کنیم.
-    </h2>
+<h2>
+داده‌های HSE را به ابزار تصمیم‌گیری مدیریت تبدیل کنیم.
+</h2>
 
-  </div>
-
-
-  <div class="digital-grid">
-
-    <div class="digital-card">
-
-      <h3>
-        داشبوردهای مدیریتی HSE
-      </h3>
-
-      <p>
-        طراحی داشبوردهای مدیریتی برای مشاهده وضعیت HSE
-        و شاخص‌های عملکردی در یک نگاه.
-      </p>
-
-      <ul>
-        <li>Power BI</li>
-        <li>Excel Dashboard</li>
-        <li>شاخص‌های HSE و KPI</li>
-        <li>تحلیل حوادث و شبه‌حوادث</li>
-        <li>گزارش‌های مدیریتی</li>
-      </ul>
-
-    </div>
+</div>
 
 
-    <div class="digital-card">
+<div class="digital-grid">
 
-      <h3>
-        سیستم‌ها و ابزارهای HSE
-      </h3>
 
-      <p>
-        طراحی ابزارهای ساده و کاربردی برای جمع‌آوری، ثبت و
-        مدیریت اطلاعات HSE.
-      </p>
+<div class="digital-card">
 
-      <ul>
-        <li>فرم‌ها و بانک‌های اطلاعاتی Excel</li>
-        <li>سیستم‌های Access</li>
-        <li>چک‌لیست‌های دیجیتال</li>
-        <li>مدیریت اقدامات اصلاحی</li>
-        <li>گزارش‌گیری و تحلیل داده</li>
-      </ul>
+<img
+src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=85"
+alt="داشبورد و تحلیل داده">
 
-    </div>
+<div class="digital-content">
 
-  </div>
+<h3>
+داشبوردهای مدیریتی HSE
+</h3>
+
+<p>
+طراحی داشبوردهای مدیریتی برای نمایش شاخص‌ها،
+حوادث، اقدامات اصلاحی و وضعیت عملکرد HSE.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="digital-card">
+
+<img
+src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=85"
+alt="سیستم سازی HSE">
+
+<div class="digital-content">
+
+<h3>
+سیستم‌ها و ابزارهای HSE
+</h3>
+
+<p>
+طراحی ابزارهای Excel، Access و سیستم‌های اطلاعاتی
+برای ثبت، مدیریت و تحلیل داده‌های HSE.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- PORTFOLIO -->
+
+<section class="portfolio" id="portfolio">
+
+<div class="section-title">
+
+<div class="eyebrow">
+نمونه‌کارها
+</div>
+
+<h2>
+بخشی از حوزه‌هایی که می‌توانم در آن‌ها همکاری کنم
+</h2>
+
+</div>
+
+
+<div class="portfolio-grid">
+
+
+<div class="portfolio-card">
+
+<img
+src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1000&q=85"
+alt="سیستم مدیریت و گزارش‌دهی">
+
+<div class="portfolio-overlay">
+
+<div>
+
+<h3>
+گزارش‌دهی و سیستم اطلاعات HSE
+</h3>
+
+<p>
+طراحی ابزارهای ثبت و گزارش‌گیری
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="portfolio-card">
+
+<img
+src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=85"
+alt="آموزش و جلسات HSE">
+
+<div class="portfolio-overlay">
+
+<div>
+
+<h3>
+آموزش و فرهنگ ایمنی
+</h3>
+
+<p>
+طراحی آموزش‌های کاربردی برای کارکنان
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="portfolio-card">
+
+<img
+src="https://images.unsplash.com/photo-1581092918484-8313e4c8f9d5?auto=format&fit=crop&w=1000&q=85"
+alt="محیط تولید صنعتی">
+
+<div class="portfolio-overlay">
+
+<div>
+
+<h3>
+بازدید و ارزیابی محیط کار
+</h3>
+
+<p>
+شناسایی خطرات و پیشنهاد اقدامات اصلاحی
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
 
 </section>
 
@@ -999,68 +1287,69 @@ footer strong{
 
 <section class="experience" id="experience">
 
-  <div class="section-title">
+<div class="section-title">
 
-    <div class="eyebrow">
-      تجربه حرفه‌ای
-    </div>
+<div class="eyebrow">
+تجربه حرفه‌ای
+</div>
 
-    <h2>
-      تجربه‌ای که از محیط واقعی صنعت به دست آمده است
-    </h2>
+<h2>
+۱۵ سال تجربه در کنار مسائل واقعی محیط کار
+</h2>
 
-  </div>
-
-
-  <div class="timeline">
-
-    <div class="timeline-card">
-
-      <strong>۱۵+</strong>
-
-      <h3>
-        سال فعالیت حرفه‌ای
-      </h3>
-
-      <p>
-        فعالیت مستمر در حوزه‌های بهداشت حرفه‌ای، ارگونومی،
-        ایمنی و HSE.
-      </p>
-
-    </div>
+</div>
 
 
-    <div class="timeline-card">
+<div class="timeline">
 
-      <strong>۶+</strong>
+<div class="timeline-card">
 
-      <h3>
-        سال تجربه مدیریتی HSE
-      </h3>
+<strong>۱۵+</strong>
 
-      <p>
-        تجربه مدیریت و هدایت فعالیت‌های HSE در محیط صنعتی و تولیدی.
-      </p>
+<h3>
+سال تجربه حرفه‌ای
+</h3>
 
-    </div>
+<p>
+فعالیت در حوزه‌های بهداشت حرفه‌ای، ارگونومی،
+ایمنی و HSE.
+</p>
+
+</div>
 
 
-    <div class="timeline-card">
+<div class="timeline-card">
 
-      <strong>صنعت</strong>
+<strong>۶+</strong>
 
-      <h3>
-        تجربه در محیط‌های تولیدی
-      </h3>
+<h3>
+سال تجربه مدیریتی HSE
+</h3>
 
-      <p>
-        تجربه کار با مسائل واقعی خطوط تولید، تجهیزات،
-        نیروی انسانی و فرآیندهای صنعتی.
-      </p>
+<p>
+تجربه مدیریت و هدایت فعالیت‌های HSE
+در محیط‌های صنعتی و تولیدی.
+</p>
 
-    </div>
+</div>
 
-  </div>
+
+<div class="timeline-card">
+
+<strong>صنعت</strong>
+
+<h3>
+تجربه محیط‌های تولیدی
+</h3>
+
+<p>
+آشنایی عملی با ریسک‌های خطوط تولید،
+تجهیزات، نیروی انسانی و فرآیندهای صنعتی.
+</p>
+
+</div>
+
+</div>
 
 </section>
 
@@ -1069,89 +1358,81 @@ footer strong{
 
 <section class="process">
 
-  <div class="section-title">
+<div class="section-title">
 
-    <div class="eyebrow">
-      روند همکاری
-    </div>
+<div class="eyebrow">
+روند همکاری
+</div>
 
-    <h2>
-      مشاوره را از مسئله واقعی شما شروع می‌کنیم
-    </h2>
+<h2>
+مشاوره را از مسئله واقعی شما شروع می‌کنیم.
+</h2>
 
-  </div>
-
-
-  <div class="steps">
-
-    <div class="step">
-
-      <div class="step-number">
-        ۰۱
-      </div>
-
-      <h3>
-        شناخت وضعیت موجود
-      </h3>
-
-      <p>
-        بررسی شرایط سازمان، فرآیندها، ریسک‌ها و مشکلات اصلی.
-      </p>
-
-    </div>
+</div>
 
 
-    <div class="step">
+<div class="steps">
 
-      <div class="step-number">
-        ۰۲
-      </div>
+<div class="step">
 
-      <h3>
-        شناسایی اولویت‌ها
-      </h3>
+<div class="step-number">۰۱</div>
 
-      <p>
-        مشخص کردن مهم‌ترین ریسک‌ها و اقداماتی که بیشترین اثر را دارند.
-      </p>
+<h3>
+شناخت وضعیت موجود
+</h3>
 
-    </div>
+<p>
+بررسی شرایط سازمان، فرآیندها و ریسک‌های اصلی.
+</p>
 
-
-    <div class="step">
-
-      <div class="step-number">
-        ۰۳
-      </div>
-
-      <h3>
-        طراحی راهکار
-      </h3>
-
-      <p>
-        ارائه راهکار عملی متناسب با شرایط، منابع و محدودیت‌های سازمان.
-      </p>
-
-    </div>
+</div>
 
 
-    <div class="step">
+<div class="step">
 
-      <div class="step-number">
-        ۰۴
-      </div>
+<div class="step-number">۰۲</div>
 
-      <h3>
-        پایش و بهبود
-      </h3>
+<h3>
+شناسایی اولویت‌ها
+</h3>
 
-      <p>
-        بررسی اثربخشی اقدامات و اصلاح سیستم بر اساس نتایج واقعی.
-      </p>
+<p>
+تعیین مهم‌ترین ریسک‌ها و اقدامات مؤثر.
+</p>
 
-    </div>
+</div>
 
-  </div>
+
+<div class="step">
+
+<div class="step-number">۰۳</div>
+
+<h3>
+طراحی راهکار
+</h3>
+
+<p>
+ارائه راهکار عملی متناسب با شرایط و منابع سازمان.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">۰۴</div>
+
+<h3>
+پایش و بهبود
+</h3>
+
+<p>
+بررسی نتایج و اصلاح سیستم بر اساس عملکرد واقعی.
+</p>
+
+</div>
+
+</div>
 
 </section>
 
@@ -1160,77 +1441,77 @@ footer strong{
 
 <section class="why">
 
-  <div class="section-title">
+<div class="section-title">
 
-    <div class="eyebrow">
-      چرا همکاری با من؟
-    </div>
+<div class="eyebrow">
+مزیت همکاری
+</div>
 
-    <h2>
-      تمرکز روی راهکار قابل اجرا، نه فقط گزارش
-    </h2>
+<h2>
+تمرکز روی راهکار قابل اجرا، نه فقط گزارش.
+</h2>
 
-  </div>
-
-
-  <div class="why-grid">
-
-    <div class="why-item">
-
-      <h3>
-        نگاه میدانی
-      </h3>
-
-      <p>
-        راهکار باید در محیط واقعی کار قابل اجرا باشد،
-        نه فقط روی کاغذ.
-      </p>
-
-    </div>
+</div>
 
 
-    <div class="why-item">
+<div class="why-grid">
 
-      <h3>
-        نگاه سیستمی
-      </h3>
+<div class="why-item">
 
-      <p>
-        ایمنی را به‌عنوان مجموعه‌ای از فرآیندها، افراد،
-        تجهیزات و مدیریت بررسی می‌کنیم.
-      </p>
+<h3>
+نگاه میدانی
+</h3>
 
-    </div>
+<p>
+راهکار باید در محیط واقعی کار قابل اجرا باشد،
+نه فقط روی کاغذ.
+</p>
 
-
-    <div class="why-item">
-
-      <h3>
-        ترکیب HSE و ارگونومی
-      </h3>
-
-      <p>
-        تجربه HSE در کنار تخصص ارگونومی امکان بررسی
-        جامع‌تری از محیط کار فراهم می‌کند.
-      </p>
-
-    </div>
+</div>
 
 
-    <div class="why-item">
+<div class="why-item">
 
-      <h3>
-        استفاده از داده
-      </h3>
+<h3>
+نگاه سیستمی
+</h3>
 
-      <p>
-        اطلاعات HSE می‌تواند به شاخص، داشبورد و ابزار
-        تصمیم‌گیری مدیریتی تبدیل شود.
-      </p>
+<p>
+ایمنی را به‌عنوان مجموعه‌ای از افراد،
+فرآیندها، تجهیزات و مدیریت بررسی می‌کنیم.
+</p>
 
-    </div>
+</div>
 
-  </div>
+
+<div class="why-item">
+
+<h3>
+HSE + ارگونومی
+</h3>
+
+<p>
+ترکیب دانش HSE و ارگونومی برای نگاه جامع‌تر
+به محیط کار.
+</p>
+
+</div>
+
+
+<div class="why-item">
+
+<h3>
+HSE + Data
+</h3>
+
+<p>
+تبدیل اطلاعات HSE به داشبورد و ابزار
+تصمیم‌گیری مدیریتی.
+</p>
+
+</div>
+
+</div>
 
 </section>
 
@@ -1239,75 +1520,82 @@ footer strong{
 
 <section class="contact" id="contact">
 
-  <div class="contact-box">
+<div class="contact-box">
 
-    <div>
+<div>
 
-      <div class="eyebrow">
-        شروع همکاری
-      </div>
+<div class="eyebrow">
+شروع همکاری
+</div>
 
-      <h2>
-        درباره مشکل HSE مجموعه‌تان صحبت کنیم.
-      </h2>
+<h2>
+درباره مسئله HSE مجموعه‌تان صحبت کنیم.
+</h2>
 
-      <p>
-        اگر در زمینه ایمنی، بهداشت حرفه‌ای، ارگونومی،
-        سیستم HSE یا گزارش‌گیری و تحلیل داده‌های HSE
-        نیاز به مشاوره دارید، می‌توانید مستقیماً با من تماس بگیرید.
-      </p>
+<p>
 
-      <br>
+اگر در زمینه ایمنی، بهداشت حرفه‌ای، ارگونومی،
+سیستم HSE یا گزارش‌گیری و تحلیل داده‌های HSE
+نیاز به مشاوره دارید، مستقیماً با من تماس بگیرید.
 
-      <p>
-        <strong>
-          محمد الله رضایی
-        </strong><br>
-        مشاور HSE، بهداشت حرفه‌ای، ارگونومی و سیستم‌های مدیریتی
-      </p>
+</p>
 
-    </div>
+<br>
+
+<p>
+
+<strong>
+محمد الله رضایی
+</strong>
+
+<br>
+
+مشاور HSE، بهداشت حرفه‌ای و ارگونومی
+
+</p>
+
+</div>
 
 
-    <div class="contact-info">
+<div class="contact-info">
 
-      <a href="tel:09129408330">
-        📞 ۰۹۱۲۹۴۰۸۳۳۰
-      </a>
+<a href="tel:09129408330">
+📞 ۰۹۱۲۹۴۰۸۳۳۰
+</a>
 
-      <a
-        class="whatsapp"
-        href="https://wa.me/989129408330"
-        target="_blank">
-        💬 ارتباط در واتساپ
-      </a>
+<a
+class="whatsapp"
+href="https://wa.me/989129408330"
+target="_blank">
 
-      <a href="#services">
-        🛡️ مشاهده خدمات مشاوره
-      </a>
+💬 ارتباط مستقیم در واتساپ
 
-    </div>
+</a>
 
-  </div>
+<a href="#services">
+🛡️ مشاهده خدمات مشاوره
+</a>
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- FOOTER -->
-
 <footer>
 
-  <strong>
-    محمد الله رضایی
-  </strong>
+<strong>
+محمد الله رضایی
+</strong>
 
-  <br>
+<br>
 
-  مشاوره HSE | ارگونومی | بهداشت حرفه‌ای | سیستم‌های داده و داشبورد مدیریتی
+مشاوره HSE | ارگونومی | بهداشت حرفه‌ای | سیستم‌های داده و داشبورد مدیریتی
 
-  <br><br>
+<br><br>
 
-  © ۱۴۰۵ تمامی حقوق محفوظ است.
+© ۱۴۰۵ تمامی حقوق محفوظ است.
 
 </footer>
 
